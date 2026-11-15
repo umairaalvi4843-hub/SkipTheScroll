@@ -10,7 +10,7 @@ LABEL_NAMES = [
     "Content removal", "Contract by using", "Choice of law", "Jurisdiction", "Arbitration",
 ]
 SEED = 42
-TARGET_TOTAL = 250
+TARGET_TOTAL = 80
 TARGET_PER_CLASS = 25
 
 def main():
