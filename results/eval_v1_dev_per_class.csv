@@ -1,0 +1,9 @@
+category,precision,recall,f1,support
+Limitation of liability,0,0.0,0,18
+Unilateral termination,0,0.0,0,15
+Unilateral change,0,0.0,0,9
+Content removal,0,0.0,0,8
+Contract by using,0,0.0,0,10
+Choice of law,0,0.0,0,6
+Jurisdiction,0,0.0,0,3
+Arbitration,0,0.0,0,2
