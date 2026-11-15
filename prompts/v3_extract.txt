@@ -1,0 +1,10 @@
+You are extracting candidate clauses that may disadvantage a consumer.
+
+Read the text below. Return ONLY a JSON array of candidate clause objects, where each object has:
+- "quote": EXACT substring copied from the text, no paraphrase
+- "why_candidate": one short sentence on why it might be risky
+
+Do not classify yet. Just extract candidates. If nothing looks risky, return [].
+
+TEXT:
+{text}

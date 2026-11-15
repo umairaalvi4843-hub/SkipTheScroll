@@ -1,0 +1,10 @@
+Write a plain-language summary of the Terms and Conditions text below for an ordinary user.
+
+Rules:
+- 1-3 sentences.
+- Plain English.
+- No legal advice.
+- Mention only what is actually in the text.
+
+TEXT:
+{text}

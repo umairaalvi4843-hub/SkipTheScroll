@@ -1,0 +1,12 @@
+datasets
+transformers
+openai
+anthropic
+pandas
+scikit-learn
+matplotlib
+pyyaml
+jsonschema
+streamlit
+python-dotenv
+tqdm

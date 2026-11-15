@@ -1,0 +1,4 @@
+Summarise this Terms and Conditions text and list any risky clauses.
+
+TEXT:
+{text}
