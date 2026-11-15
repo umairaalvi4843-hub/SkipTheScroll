@@ -1,0 +1,9 @@
+category,precision,recall,f1,support
+Limitation of liability,0.8,0.889,0.842,18
+Unilateral termination,1.0,0.8,0.889,15
+Unilateral change,0.75,1.0,0.857,9
+Content removal,1.0,0.75,0.857,8
+Contract by using,0.818,0.9,0.857,10
+Choice of law,0.833,0.833,0.833,6
+Jurisdiction,1.0,1.0,1.0,3
+Arbitration,0.667,1.0,0.8,2
