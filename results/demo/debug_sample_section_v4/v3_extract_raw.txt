@@ -1,0 +1,33 @@
+```json
+
+[
+  {
+    "quote": "We reserve the right to modify or change these Terms of Use and other Swiggy policies at any time by posting modified documents on the Platform.",
+    "why_candidate": "Allows the company to change terms unilaterally at any time without direct notice."
+  },
+  {
+    "quote": "Your continued use of the Platform and the Services after any change is posted, constitutes your acceptance of the amended Terms of Use and other Swiggy policies.",
+    "why_candidate": "Binds the consumer to modified terms automatically through continued use."
+  },
+  {
+    "quote": "Swiggy reserves the right to suspend/cancel, or discontinue any or all products or services at any time without notice",
+    "why_candidate": "Permits the company to discontinue services instantly without prior warning."
+  },
+  {
+    "quote": "you agree to grant us a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sub-licensable (through multiple tiers) right to exercise the copyright, publicity, database rights or any other rights you have in your Information",
+    "why_candidate": "Demands a very broad, permanent license to user content and information without compensation."
+  },
+  {
+    "quote": "We expressly disclaim all liabilities that may arise as a consequence of any unauthorized use of your credit/debit card.",
+    "why_candidate": "Shifts all responsibility for unauthorized card usage onto the consumer."
+  },
+  {
+    "quote": "Swiggy does not offer any refunds against goods or services already purchased from a Merchant or PDP through the Platform unless an error that is directly attributable to Swiggy has occurred",
+    "why_candidate": "Restricts refunds tightly, placing heavy limitations on consumer recourse for purchases."
+  },
+  {
+    "quote": "Swiggy will not be responsible for any delay in the delivery of an Order.",
+    "why_candidate": "Disclaims liability for order delivery delays."
+  }
+]
+```

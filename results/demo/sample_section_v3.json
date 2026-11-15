@@ -1,0 +1,70 @@
+{
+  "document_title": null,
+  "summary": "Swiggy can change its terms, policies, or services at any time, and your continued use of the platform means you accept these updates. You grant Swiggy broad rights to use your information, which they may also share with law enforcement or government officials as needed to follow the law or investigate crimes. You are responsible for keeping your account details accurate and secure, while Swiggy generally is not liable for deliveries, merchant menu changes, taxes, or content you post.",
+  "clauses": [
+    {
+      "quote": "We reserve the right to modify or change these Terms of Use and other Swiggy policies at any time by posting modified documents on the Platform.",
+      "category": "Unilateral change",
+      "risk_level": "high",
+      "explanation_en": "The company can change the terms anytime by posting them online.",
+      "explanation_hi": "Company kabhi bhi terms badal sakti hai bina direct notice ke."
+    },
+    {
+      "quote": "Your continued use of the Platform and the Services after any change is posted, constitutes your acceptance of the amended Terms of Use and other Swiggy policies.",
+      "category": "Contract by using",
+      "risk_level": "medium",
+      "explanation_en": "Using the service after changes means you automatically accept them.",
+      "explanation_hi": "App use karte rehne se naye rules automatically accept ho jate hain."
+    },
+    {
+      "quote": "Swiggy reserves the right to suspend/cancel, or discontinue any or all products or services at any time without notice, make modifications and alterations in any or all of its contents, products and services contained on the site without any prior notice.",
+      "category": "Unilateral termination",
+      "risk_level": "high",
+      "explanation_en": "The platform can stop services or change content without any prior notice.",
+      "explanation_hi": "Company bina kisi notice ke services band ya modify kar sakti hai."
+    },
+    {
+      "quote": "you agree to grant us a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sub-licensable (through multiple tiers) right to exercise the copyright, publicity, database rights or any other rights you have in your Information",
+      "category": "Content removal",
+      "risk_level": "medium",
+      "explanation_en": "You give the company permanent, free rights to use your submitted information.",
+      "explanation_hi": "Aap apni information ke use ke liye company ko permanent rights dete hain."
+    },
+    {
+      "quote": "We reserve the right to suspend or terminate your Swiggy Account and your access to the Services (i) if any information provided during the registration process or thereafter proves to be inaccurate, not current or incomplete; (ii) if it is believed that your actions may cause legal liability for you, other users or us; and/or (iii) if you are found to be non-compliant with the Terms of Use or other Swiggy policies.",
+      "category": "Unilateral termination",
+      "risk_level": "high",
+      "explanation_en": "The company can terminate your account at its own broad discretion.",
+      "explanation_hi": "Company apni marzi se aapka account suspend ya terminate kar sakti hai."
+    },
+    {
+      "quote": "Buyer shall be solely responsible for the security and confidentiality of his/her credit/debit card details. We expressly disclaim all liabilities that may arise as a consequence of any unauthorized use of your credit/debit card.",
+      "category": "Limitation of liability",
+      "risk_level": "high",
+      "explanation_en": "The company takes no responsibility for any unauthorized use of your card.",
+      "explanation_hi": "Card ke unauthorized use ki saari zimmedari aapki hi hogi, company ki nahi."
+    },
+    {
+      "quote": "Swiggy does not offer any refunds against goods or services already purchased from a Merchant or PDP through the Platform unless an error that is directly attributable to Swiggy has occurred during the purchase of such product or services.",
+      "category": "Limitation of liability",
+      "risk_level": "medium",
+      "explanation_en": "Refunds are restricted unless the platform itself makes a direct error.",
+      "explanation_hi": "Jab tak company ki galti na ho, tab tak koi refund nahi milega."
+    },
+    {
+      "quote": "Swiggy reserves the right to amend, withdraw, modify, convert, suspend, or discontinue any such promotional benefits at any time without prior notice.",
+      "category": "Unilateral termination",
+      "risk_level": "medium",
+      "explanation_en": "Promotional benefits can be withdrawn or changed anytime without prior notice.",
+      "explanation_hi": "Offers ya promotional benefits ko bina notice ke kabhi bhi band kiya ja sakta hai."
+    },
+    {
+      "quote": "Swiggy will not be responsible for any delay in the delivery of an Order.",
+      "category": "Limitation of liability",
+      "risk_level": "medium",
+      "explanation_en": "The company disclaims all liability for any delivery delays.",
+      "explanation_hi": "Order delivery mein kisi bhi deri ke liye company zimmedar nahi hogi."
+    }
+  ],
+  "disclaimer": "This is information only, not legal advice. Consult a qualified professional for decisions."
+}

@@ -1,53 +1,45 @@
 {
   "document_title": "Swiggy Terms of Use",
-  "summary": "Swiggy's terms outline user responsibilities, platform usage rights, and liability disclaimers for deliveries and payments. The company reserves the right to modify terms, remove content, and suspend accounts at any time.",
+  "summary": "Swiggy's terms outline user responsibilities, platform usage rules, and liability disclaimers for deliveries and payments. Swiggy can modify terms, terminate accounts, or remove content at any time.",
   "clauses": [
     {
       "category": "Unilateral change",
       "quote": "We reserve the right to modify or change these Terms of Use and other Swiggy policies at any time by posting modified documents on the Platform.",
       "risk_level": "medium",
-      "explanation_en": "Swiggy can change these rules anytime without directly notifying you.",
-      "explanation_hi": "Swiggy bina bataye kabhi bhi yeh rules badal sakta hai.",
+      "explanation_en": "Swiggy can change these rules at any time without asking you.",
+      "explanation_hi": "Swiggy bina bataye kabhi bhi ye niyam badal sakta hai.",
       "quote_verified": true
     },
     {
       "category": "Contract by using",
       "quote": "Your continued use of the Platform and the Services after any change is posted, constitutes your acceptance of the amended Terms of Use and other Swiggy policies.",
-      "risk_level": "low",
-      "explanation_en": "Using the app means you automatically agree to any updated terms.",
-      "explanation_hi": "App use karte rehne ka matlab hai ki aap naye rules se agree karte hain.",
-      "quote_verified": true
-    },
-    {
-      "category": "Unilateral termination",
-      "quote": "Swiggy reserves the right to suspend/cancel, or discontinue any or all products or services at any time without notice",
-      "risk_level": "high",
-      "explanation_en": "Swiggy can stop any service or cancel your account without prior notice.",
-      "explanation_hi": "Swiggy bina notice diye aapka account ya koi bhi service band kar sakta hai.",
+      "risk_level": "medium",
+      "explanation_en": "Using the app means you automatically agree to any new rule changes.",
+      "explanation_hi": "App use karte rehne ka matlab hai ki aap naye niyamo se sehmat hain.",
       "quote_verified": true
     },
     {
       "category": "Content removal",
       "quote": "Swiggy shall have the right to remove or edit any content that in its sole discretion violates, or is alleged to violate, any applicable law or either the spirit or letter of these Terms of Use.",
-      "risk_level": "medium",
-      "explanation_en": "Swiggy can delete or edit any content you post if they choose.",
-      "explanation_hi": "Swiggy aapka post kiya hua koi bhi content delete ya edit kar sakta hai.",
+      "risk_level": "low",
+      "explanation_en": "Swiggy can delete or edit anything you post if they feel it breaks the rules.",
+      "explanation_hi": "Swiggy aapke post kiye content ko hata ya edit sakta hai.",
       "quote_verified": true
     },
     {
-      "category": "Limitation of liability",
-      "quote": "In no event shall Swiggy assume or have any responsibility or liability for any content posted or for any claims, damages or losses resulting from use of Content and/or appearance of Content on the Platform.",
+      "category": "Unilateral termination",
+      "quote": "We reserve the right to suspend or terminate your Swiggy Account and your access to the Services (i) if any information provided during the registration process or thereafter proves to be inaccurate, not current or incomplete;",
       "risk_level": "high",
-      "explanation_en": "Swiggy is not responsible for any losses or damages caused by user-posted content.",
-      "explanation_hi": "Content ki wajah se hue kisi bhi nuksan ke liye Swiggy zimmedar nahi hai.",
+      "explanation_en": "Swiggy can ban your account anytime if your details are incorrect.",
+      "explanation_hi": "Galat details hone par Swiggy aapka account band kar sakta hai.",
       "quote_verified": true
     },
     {
       "category": "Limitation of liability",
       "quote": "Buyer understands that Swiggy's (including Merchant's and PDP's) liability ends once Order has been delivered to him/her",
-      "risk_level": "medium",
-      "explanation_en": "Swiggy is not responsible for anything that happens after your order is delivered.",
-      "explanation_hi": "Order deliver hone ke baad kisi bhi problem ke liye Swiggy zimmedar nahi hai.",
+      "risk_level": "high",
+      "explanation_en": "Swiggy is not responsible for anything once your order is delivered.",
+      "explanation_hi": "Order deliver hone ke baad Swiggy ki koi zimmedari nahi hai.",
       "quote_verified": true
     }
   ],
