@@ -1,4 +1,4 @@
-# ClauseClear — Skip the Scroll
+# ScrollLess— Skip the Scroll
 
 Prompt Engineering mini-project, Bennett University, B.Tech Sem 5.
 Problem C18: Terms and conditions in plain language.
