@@ -1,15 +1,11 @@
-# Model configuration for ClauseClear
-# Update after first successful run
-
-provider: TODO  # openai | anthropic | google | other
-model_name: TODO  # e.g. gpt-4o-mini
-model_version_string: TODO  # record exact snapshot reported by API
-temperature: 0.0  # 0 for all evaluation runs
+provider: google
+model_name: gemini-3.5-flash-lite
+model_version_string: TODO
+temperature: 0.0
 top_p: 1.0
 max_tokens: 2000
 json_mode: true
 seed: 42
 run_date: TODO
 notes: |
-  All evaluation runs use temperature 0. Pilot/demo runs may use defaults.
-  Record the exact model version string in every results file.
+  All evaluation runs use temperature 0.
