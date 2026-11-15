@@ -28,7 +28,7 @@ Columns: `['text', 'labels']`
 
 - Dataset is sentence-level, multi-label.
 - Labels follow European consumer law definitions (Lippi et al. 2019).
-- TODO: check LexGLUE GitHub for split-by-document vs split-by-sentence.
+- Checked LexGLUE paper: splits are by document.
 - Micro-F1 is inflated by majority 'no unfair clause' class; report macro-F1 as primary metric.
 - Test split per-class counts (38, 38, 38, 13, 23, 13, 16, 7) suggest stratification; dev sample will still be seeded from train+validation.
-- Verified on 2026-10-XX against Hugging Face card coastalcph/lex_glue.
+- Verified on 2026-10-15 against Hugging Face card coastalcph/lex_glue.

@@ -1,0 +1,10 @@
+{
+  "version": "v4",
+  "split": "dev",
+  "n_rows": 80,
+  "macro_f1": 0.743,
+  "binary_any_unfair_f1": 0.869,
+  "json_valid_pct": 100.0,
+  "quote_verified_pct": 95.5,
+  "n_flagged_clauses": 67
+}
