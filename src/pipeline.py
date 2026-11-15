@@ -2,10 +2,19 @@
 import json
 import argparse
 from pathlib import Path
+import yaml
 from src.llm_client import load_prompt, call_llm
 from src.verifier import verify_all
 
 DISCLAIMER = "This is information only, not legal advice. Consult a qualified professional for decisions."
+_RISK_MAP = yaml.safe_load(Path("configs/risk_mapping.yaml").read_text())
+
+def _apply_risk_mapping(clauses):
+    for c in clauses:
+        cat = c.get("category")
+        if cat in _RISK_MAP:
+            c["risk_level"] = _RISK_MAP[cat]
+    return clauses
 
 def _debug_dump(name, content, debug_dir):
     if debug_dir:
@@ -14,12 +23,10 @@ def _debug_dump(name, content, debug_dir):
         (p / f"{name}.txt").write_text(content if isinstance(content, str) else json.dumps(content, indent=2))
 
 def _safe_json(raw, default):
-    """Try to parse JSON; handle ```json fences and single-object wrapping."""
     if raw is None:
         return default
     s = raw.strip()
     if s.startswith("```"):
-        # strip code fences
         s = s.strip("`")
         if s.lower().startswith("json"):
             s = s[4:]
@@ -30,13 +37,11 @@ def _safe_json(raw, default):
         return default
 
 def _extract_clauses(classified):
-    """Handle all the shapes Gemini returns."""
     if isinstance(classified, list):
         return classified
     if isinstance(classified, dict):
         if "clauses" in classified and isinstance(classified["clauses"], list):
             return classified["clauses"]
-        # Sometimes wrapped as {"response": {"clauses": [...]}}
         for v in classified.values():
             if isinstance(v, dict) and "clauses" in v and isinstance(v["clauses"], list):
                 return v["clauses"]
@@ -78,6 +83,7 @@ def run_v3(text, debug_dir=None):
     summary = call_llm(load_prompt("v3", "summary").format(text=text))
     _debug_dump("v3_summary_raw", summary, debug_dir)
 
+    clauses = _apply_risk_mapping(clauses)
     return {
         "document_title": None,
         "summary": summary,

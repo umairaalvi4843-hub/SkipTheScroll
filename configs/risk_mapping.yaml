@@ -1,0 +1,18 @@
+# Deterministic category-to-risk mapping.
+# Applied in v3+ AFTER the classify stage, overriding the model's risk_level.
+# Rationale:
+#   - UNFAIR-ToS has no gold severity labels, so model-guessed risk is not verifiable.
+#   - A fixed mapping is reproducible, auditable, and defensible.
+#   - high   = clauses that materially limit user rights or money
+#   - medium = clauses that shift control or evidence to the company
+#   - low    = clauses that are informational or easily reversible
+
+Limitation of liability: high
+Unilateral termination: high
+Unilateral change: high
+Content removal: medium
+Contract by using: medium
+Choice of law: medium
+Jurisdiction: medium
+Arbitration: high
+None: low
