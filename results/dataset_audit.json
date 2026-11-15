@@ -1,0 +1,56 @@
+{
+  "columns": [
+    "text",
+    "labels"
+  ],
+  "splits": [
+    {
+      "split": "train",
+      "n_rows": 5532,
+      "empty_label_pct": 88.61,
+      "multi_label_pct": 1.14,
+      "per_class_counts": {
+        "Contract by using": 76,
+        "Unilateral change": 122,
+        "Content removal": 73,
+        "Unilateral termination": 139,
+        "Limitation of liability": 191,
+        "Arbitration": 28,
+        "Jurisdiction": 34,
+        "Choice of law": 39
+      }
+    },
+    {
+      "split": "validation",
+      "n_rows": 2275,
+      "empty_label_pct": 89.89,
+      "multi_label_pct": 0.79,
+      "per_class_counts": {
+        "Unilateral change": 28,
+        "Content removal": 32,
+        "Limitation of liability": 67,
+        "Unilateral termination": 59,
+        "Choice of law": 18,
+        "Contract by using": 18,
+        "Arbitration": 9,
+        "Jurisdiction": 18
+      }
+    },
+    {
+      "split": "test",
+      "n_rows": 1607,
+      "empty_label_pct": 89.3,
+      "multi_label_pct": 0.87,
+      "per_class_counts": {
+        "Arbitration": 7,
+        "Contract by using": 23,
+        "Unilateral change": 38,
+        "Unilateral termination": 38,
+        "Content removal": 13,
+        "Limitation of liability": 38,
+        "Choice of law": 13,
+        "Jurisdiction": 16
+      }
+    }
+  ]
+}
