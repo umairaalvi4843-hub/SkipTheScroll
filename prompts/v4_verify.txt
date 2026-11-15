@@ -2,7 +2,7 @@ You are a verifier. For each clause below, decide whether the given quote
 appears verbatim in the source text.
 
 Return ONLY valid JSON:
-{"results": [{"quote": "...", "found": true | false, "closest_match": "..."}]}
+{{"results": [{{"quote": "...", "found": true | false, "closest_match": "..."}}]}}
 
 "closest_match" is the closest substring from the source if found is false, else null.
 

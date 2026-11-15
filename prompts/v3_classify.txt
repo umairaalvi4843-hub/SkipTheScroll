@@ -7,7 +7,7 @@ For each candidate below, assign:
 - explanation_hi: one sentence in Hindi or Hinglish, max 25 words
 
 Return ONLY valid JSON in this format:
-{"clauses": [{"quote": "...", "category": "...", "risk_level": "...", "explanation_en": "...", "explanation_hi": "..."}]}
+{{"clauses": [{{"quote": "...", "category": "...", "risk_level": "...", "explanation_en": "...", "explanation_hi": "..."}}]}}
 
 CANDIDATES:
 {candidates}
