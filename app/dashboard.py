@@ -3,130 +3,47 @@ import streamlit as st
 import sys
 import os
 
+# Fix for ModuleNotFoundError when running locally OR on Streamlit Cloud
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.pipeline import run
 
 st.set_page_config(page_title="ScrollLess", layout="wide", page_icon="🧈")
 
+# Custom CSS for Butter Yellow UI & Pretty Fonts
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
-    /* Force Streamlit to stop cutting off content */
-    .block-container {
-        padding-top: 2rem !important;
-        padding-bottom: 0rem !important;
-        max-width: 95% !important;
-    }
+    .block-container { padding-top: 1rem !important; padding-bottom: 0rem !important; max-width: 95% !important; }
+    .stApp { background-color: #FFF9E6 !important; font-family: 'Outfit', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif !important; color: #3D3B40 !important; }
     
-    .stApp {
-        background-color: #FFF9E6 !important;
-        font-family: 'Outfit', sans-serif;
-    }
+    .header-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 10px; margin-bottom: 10px; }
+    .icon-row { display: flex; gap: 25px; margin-bottom: 5px; }
     
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Outfit', sans-serif !important;
-        color: #3D3B40 !important;
-    }
-
-    /* The magic fix: One container for everything */
-    .header-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .icon-row {
-        display: flex;
-        gap: 25px;
-        margin-bottom: 5px;
-    }
-
-    .big-title {
-        font-family: 'Playfair Display', serif !important;
-        font-size: 4rem !important;
-        font-weight: 700 !important;
-        color: #3D3B40 !important;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        line-height: 1.2 !important;
-    }
+    .big-title { font-family: 'Playfair Display', serif !important; font-size: 4rem !important; font-weight: 700 !important; color: #3D3B40 !important; text-align: center; margin: 0; padding: 0; line-height: 1.2 !important; }
+    .sub-title { font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #6B6A65; text-align: center; margin-bottom: 15px; }
     
-    .sub-title {
-        font-family: 'Outfit', sans-serif;
-        font-size: 1.1rem;
-        color: #6B6A65;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+    .stTextArea textarea { background-color: #FFFFFF !important; color: #3D3B40 !important; border: 2px solid #E0D8C8 !important; border-radius: 12px !important; font-family: 'Courier New', monospace !important; }
     
-    .stTextArea textarea {
-        background-color: #FFFFFF !important;
-        color: #3D3B40 !important;
-        border: 2px solid #E0D8C8 !important;
-        border-radius: 12px !important;
-        font-family: 'Courier New', monospace !important;
-    }
-
-    .clause-card {
-        background-color: #FFFFFF;
-        border-radius: 12px;
-        padding: 15px;
-        margin-bottom: 15px;
-        box-shadow: 0 4px 12px rgba(160, 140, 100, 0.1);
-        border-left: 6px solid #4CAF50;
-    }
+    .clause-card { background-color: #FFFFFF; border-radius: 12px; padding: 15px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(160, 140, 100, 0.1); border-left: 6px solid #4CAF50; }
     .clause-card.high { border-left-color: #FF6B6B; }
     .clause-card.medium { border-left-color: #FFB347; }
     .clause-card.low { border-left-color: #4CAF50; }
     
-    .risk-pill {
-        padding: 4px 10px;
-        border-radius: 15px;
-        font-size: 0.7em;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: white;
-    }
+    .risk-pill { padding: 4px 10px; border-radius: 15px; font-size: 0.7em; font-weight: 800; text-transform: uppercase; color: white; }
     .risk-high { background-color: #FF6B6B; }
     .risk-medium { background-color: #FFB347; color: #333;}
     .risk-low { background-color: #4CAF50; }
     
-    .quote-box {
-        font-family: 'Courier New', Courier, monospace;
-        background-color: #F9F9F9;
-        padding: 10px;
-        border-radius: 8px;
-        color: #444;
-        margin: 10px 0;
-        border-left: 3px solid #E0E0E0;
-        font-size: 0.85rem;
-    }
+    .quote-box { font-family: 'Courier New', Courier, monospace; background-color: #F9F9F9; padding: 10px; border-radius: 8px; color: #444; margin: 10px 0; border-left: 3px solid #E0E0E0; font-size: 0.85rem; }
     
-    .stAlert {
-        background-color: #FFF3CD !important;
-        color: #856404 !important;
-        border: 1px solid #FFEEBA !important;
-        border-radius: 8px !important;
-        padding: 10px !important;
-    }
-    
-    .stButton > button {
-        background-color: #FFB347 !important;
-        color: #3D3B40 !important;
-        font-weight: 800 !important;
-        border-radius: 10px !important;
-        border: none !important;
-        padding: 10px 20px !important;
-    }
+    .stAlert { background-color: #FFF3CD !important; color: #856404 !important; border: 1px solid #FFEEBA !important; border-radius: 8px !important; padding: 10px !important; }
+    .stButton > button { background-color: #FFB347 !important; color: #3D3B40 !important; font-weight: 800 !important; border-radius: 10px !important; border: none !important; padding: 10px 20px !important; }
     </style>
 """, unsafe_allow_html=True)
 
-# Everything in one single HTML block to prevent cutting
+# Wrapped the header elements in a single container so they don't get cut off
 st.markdown("""
 <div class="header-wrapper">
     <div class="icon-row">
